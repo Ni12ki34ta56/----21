@@ -243,6 +243,8 @@ class YourApplication:
                 for row in data:
                     self.table_pr.insert("", "end", values=row)
 
+                return columns  # Return the columns list
+
             self.table_pr = ttk.Treeview(edit_window)
             self.table_pr.pack()
             columns = update_treeview()
